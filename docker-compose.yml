@@ -1,0 +1,8 @@
+services:
+  cs415-db:
+    build: ./
+    image: image_cs415_db
+    container_name: container_cs415_db
+    restart: always
+    ports:
+      - 5432:5432

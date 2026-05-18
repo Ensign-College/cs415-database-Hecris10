@@ -1,0 +1,12 @@
+services:
+  ubuntu-main:
+    image: ubuntu:latest
+    container_name: ubuntu-main
+    command: sleep infinity
+
+  ubuntu-myuser:
+    build:
+      context: ./ubuntu-myuser
+      dockerfile: Dockerfile
+    container_name: ubuntu-myuser
+    command: sleep infinity
